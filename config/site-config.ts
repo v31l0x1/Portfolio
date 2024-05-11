@@ -57,7 +57,7 @@ const GridItems: GridItemInterface[] = [
     icon: "github",
     username: "@batuhanbilginn",
     buttonTitle: "Follow",
-    buttonLink: "https://github.com/batuhanbilginn",
+    buttonLink: "https://github.com/v31l0x1",
     color: "#070707",
   },
   {
