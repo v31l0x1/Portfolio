@@ -85,9 +85,8 @@ const GridItems: GridItemInterface[] = [
     title: "TryHackMe",
     icon: "tryhackme",
     username: "@v31l_0x1",
-    buttonTitle: "Follow",
+    buttonTitle: "View Profile",
     buttonLink: "https://tryhackme.com/p/V31L0x1",
-    buttonSecondaryText: "44",
     color: "#1A1A1A",
   },
   {
