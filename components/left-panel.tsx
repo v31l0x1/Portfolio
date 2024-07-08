@@ -18,7 +18,7 @@ const LeftPanel = () => {
             loading="eager"
             alt="avatar"
             placeholder="blur"
-            src="/profile.png"
+            src="/profile_circle.png"
             width={210}
             height={210}
             blurDataURL="/profile.png"

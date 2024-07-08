@@ -34,9 +34,8 @@ const GridItems: GridItemInterface[] = [
     title: "Linkedin",
     icon: "linkedin",
     username: "@v31l0x1",
-    description:
-      "Cybersecurity Enthusiast || Passionate About Network Security, Cyber Forensics, and OSCP || Gopher.",
     color: "#0077B5",
+    description: "Cybersecurity Enthusiast || Passionate About Network Security, Cyber Forensics, and OSCP || Gopher.",
     buttonTitle: "Connect",
     buttonLink: "https://www.linkedin.com/in/v31l-0x1/",
   },
@@ -67,7 +66,7 @@ const GridItems: GridItemInterface[] = [
     image: "/cocon.jpg",
   },
   {
-    layout: "2x2",
+    layout: "1x2",
     type: "social",
     title: "Twitter",
     icon: "twitter",
@@ -75,9 +74,7 @@ const GridItems: GridItemInterface[] = [
     buttonTitle: "Follow",
     buttonLink: "https://twitter.com/v31l_0x1",
     buttonSecondaryText: "279",
-    color: "#1DA1F2",
-    description:
-      "Cybersecurity Enthusiast  || Passionate About Network Security, Cyber Forensics, and OSCP.",
+    color: "#1DA1F2"
   },
   {
     layout: "1x2",
@@ -97,6 +94,16 @@ const GridItems: GridItemInterface[] = [
     username: "@v31l_0x1",
     buttonTitle: "View Profile",
     color: "#9FEF00",
+    buttonLink: "https://app.hackthebox.com/users/1044801",
+  },
+  {
+    layout: "1x2",
+    type: "social",
+    title: "BuyMeACoffee",
+    icon: "buymeacoffee",
+    username: "@v31l_0x1",
+    buttonTitle: "Buy",
+    color: "#FFDD00",
     buttonLink: "https://app.hackthebox.com/users/1044801",
   },
   {
@@ -122,7 +129,7 @@ const GridItems: GridItemInterface[] = [
 export const siteConfig = {
   creator: "Manikanta",
   title: "Penetration Tester",
-  bio: "Jr Penetration Tester ( eJPTv2 ) || Bug Hunter 🐞, CTF Player 🎮",
+  bio: "Jr Penetration Tester ( CEH, eJPTv2) || Bug Hunter 🐞, CTF Player 🎮",
   resume: "View Resume",
   resumeLink:
     "/resume.pdf",
