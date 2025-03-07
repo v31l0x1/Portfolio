@@ -7,6 +7,7 @@ import Equipments from "./grid-items/equipments";
 import Mentor from "./grid-items/mentor";
 import Project from "./grid-items/project";
 import Social from "./grid-items/social";
+import Companies from "./grid-items/companies";
 
 const RightPanel = () => {
   const [scope, animate] = useAnimate();
@@ -14,7 +15,6 @@ const RightPanel = () => {
     startDelay: 0.5,
   });
 
-  // ANIMATION
   useEffect(() => {
     if (scope.current) {
       animate(
@@ -50,6 +50,8 @@ const RightPanel = () => {
               <Project item={item} />
             ) : item.type === "equipment" ? (
               <Equipments item={item} />
+            ) : item.type === "companies" ? (
+              <Companies item={item} />
             ) : (
               <div>Need to create new component type.</div>
             )}
