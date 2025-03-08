@@ -6,24 +6,24 @@ import Icon from "../icon";
 
 const Companies = ({ item }: { item: GridItemInterface }) => {
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full bg-white dark:bg-transparent rounded-lg">
       {/* Header */}
       <div className="flex items-center justify-between">
         {item.icon && (
           <div className="flex items-center gap-2">
-            <Icon type={item.icon} color={item.color ?? "#fff"} />
-            <span className="font-semibold text-sm">Companies Secured</span>
+            <Icon type={item.icon} color={item.color ?? "currentColor"} />
+            <span className="font-semibold text-sm text-neutral-800 dark:text-white">Companies Secured</span>
           </div>
         )}
       </div>
 
       {/* Content */}
       <div className="mt-2 flex-1">
-        <div className="@lg:text-lg font-semibold line-clamp-1">
+        <div className="@lg:text-lg font-semibold line-clamp-1 text-neutral-900 dark:text-white">
           {item.title}
         </div>
         {item.description && (
-          <div className="mt-1 text-sm text-neutral-500 line-clamp-2">
+          <div className="mt-1 text-sm text-neutral-600 dark:text-neutral-500 line-clamp-2">
             {item.description}
           </div>
         )}
@@ -34,7 +34,7 @@ const Companies = ({ item }: { item: GridItemInterface }) => {
             {item.companies.map((company, index) => (
               <div
                 key={index}
-                className="relative w-16 h-16 rounded-lg overflow-hidden bg-neutral-800/50"
+                className="relative w-16 h-16 rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-800/50 shadow-sm"
               >
                 {company.logo && (
                   <Image
