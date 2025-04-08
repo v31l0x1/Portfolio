@@ -8,6 +8,7 @@ import Mentor from "./grid-items/mentor";
 import Project from "./grid-items/project";
 import Social from "./grid-items/social";
 import Companies from "./grid-items/companies";
+import Certifications from "./grid-items/certifications";
 
 const RightPanel = () => {
   const [scope, animate] = useAnimate();
@@ -52,6 +53,8 @@ const RightPanel = () => {
               <Equipments item={item} />
             ) : item.type === "companies" ? (
               <Companies item={item} />
+            ) : item.type === "certifications" ? (
+              <Certifications item={item} />
             ) : (
               <div>Need to create new component type.</div>
             )}

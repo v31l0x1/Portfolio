@@ -30,18 +30,18 @@ const Companies = ({ item }: { item: GridItemInterface }) => {
 
         {/* Company Logos */}
         {item.companies && item.companies.length > 0 && (
-          <div className="mt-3 flex flex-wrap gap-4 items-center">
+          <div className="mt-3 flex flex-wrap gap-2 items-center">
             {item.companies.map((company, index) => (
               <div
                 key={index}
-                className="relative w-16 h-16 rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-800/50 shadow-sm"
+                className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-800/50 shadow-sm"
               >
                 {company.logo && (
                   <Image
                     src={company.logo}
                     alt={company.name || "Company Logo"}
                     fill
-                    className="object-contain p-2"
+                    className="object-contain p-1 sm:p-1.5 md:p-2"
                   />
                 )}
               </div>
